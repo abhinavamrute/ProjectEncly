@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encly - Anonymous Communication Platform</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <header id="header"></header>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Speak Anonymously. Forever.</h1>
+                <p>Encly is the last free place on the internet. No names. No tracking. No censorship.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Join</button>
+                    <button class="btn btn-secondary" id="ExploreBtn">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Why Encly Section -->
+    <section class="section" id="why">
+        <div class="container">
+            <h2 class="section-title">Why We Built Encly</h2>
+            
+            <div class="why-encly">
+                <div class="why-content">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i data-lucide="mic-off"></i>
+                        </div>
+                        <div>
+                            <h3>Comedians are arrested for jokes.</h3>
+                            <p>What was once humor is now "hate speech." Encly protects satire and free expression.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i data-lucide="eye-off"></i>
+                        </div>
+                        <div>
+                            <h3>Posts are censored. Thoughts are policed.</h3>
+                            <p>Algorithms shadowban and governments mandate "approved" narratives. We reject this.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div>
+                            <h3>Encly exists so no one can silence you.</h3>
+                            <p>Our technology ensures your voice is heard without fear of retribution or surveillance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="why-image">
+                    <img src="https://placehold.co/600x400/111/00ffe4?text=Privacy+Matters" alt="Privacy Matters" style="width: 100%; border-radius: 8px; border: 1px solid var(--primary);">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Core Ideology Section -->
+    <section class="section ideology">
+        <div class="container">
+            <h2 class="section-title">What We Believe</h2>
+            
+            <div class="beliefs-grid">
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="infinity"></i>
+                    </div>
+                    <h3>Free forever, no ads</h3>
+                    <p>We'll never sell out. No advertisements, no paywalls, no compromises.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="ghost"></i>
+                    </div>
+                    <h3>No names, no emails</h3>
+                    <p>Anonymous by design. We don't know who you are and we don't want to.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="lock"></i>
+                    </div>
+                    <h3>Absolute privacy</h3>
+                    <p>End-to-end encrypted everything. Not even we can read your messages.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="message-square"></i>
+                    </div>
+                    <h3>Hate speech = free speech</h3>
+                    <p>We don't judge. Let the marketplace of ideas decide what has value.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="flag-off"></i>
+                    </div>
+                    <h3>No governments, no bans</h3>
+                    <p>We ignore takedown requests and resist all forms of censorship.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="bitcoin"></i>
+                    </div>
+                    <h3>Crypto donations only</h3>
+                    <p>No banks, no payment processors. Financial sovereignty matters.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="alert-circle"></i>
+                    </div>
+                    <h3>Criticism is a right</h3>
+                    <p>Question everything, especially us. No sacred cows allowed.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="user-x"></i>
+                    </div>
+                    <h3>No surveillance</h3>
+                    <p>We don't log IPs, track behavior, or fingerprint devices.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="trash-2"></i>
+                    </div>
+                    <h3>No stored data ever</h3>
+                    <p>Messages are ephemeral by default. Nothing is stored permanently.</p>
+                </div>
+                
+                <div class="belief-card">
+                    <div class="belief-icon">
+                        <i data-lucide="eraser"></i>
+                    </div>
+                    <h3>Delete without a trace</h3>
+                    <p>When you delete something, it's gone forever. No backups, no recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">What You Can Do on Encly</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3>Anonymous Messaging</h3>
+                    <p>Send encrypted messages to anyone without revealing your identity.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Public & Private Forums</h3>
+                    <p>Join topic-based communities or create your own private groups.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="file"></i>
+                    </div>
+                    <h3>File Sharing</h3>
+                    <p>Share documents, images, and videos with end-to-end encryption.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="camera-off"></i>
+                    </div>
+                    <h3>Screenshot-Proof Conversations</h3>
+                    <p>Our technology makes it impossible to capture message content.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="hourglass"></i>
+                    </div>
+                    <h3>Self-Destructing Accounts</h3>
+                    <p>Set your account to automatically delete after a period of time.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="wallet"></i>
+                    </div>
+                    <h3>Crypto Wallet-to-Wallet Transfers</h3>
+                    <p>Send and receive cryptocurrency without intermediaries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Privacy Tech Section -->
+    <section class="section privacy-tech">
+        <div class="container">
+            <h2 class="section-title">How We Protect You</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>No IP logging. Not even temporarily.</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We've designed our network architecture to never see or store your IP address. Unlike other services that claim "we only log IPs temporarily," we don't have the capability to log them at all.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Messages never touch a server — not even encrypted</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Using advanced peer-to-peer encryption protocols, your messages are routed directly between users without passing through our infrastructure. We literally can't see your communications.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Screenshot blocker tech</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our proprietary client-side technology prevents screenshots and screen recordings of sensitive conversations. The content only exists in your memory.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>IP hopping via VPN rotation</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Even if someone tries to monitor your network traffic, our system automatically rotates through multiple VPN endpoints to obscure your digital footprint.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Metadata stripping and anti-AI data protections</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We remove all metadata from files and messages, and employ techniques to prevent AI analysis of content patterns that could deanonymize users.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Full erase = zero trace</span>
+                        <i data-lucide="chevron-down" class="accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>When you delete content, it's permanently erased with military-grade wiping algorithms. No fragments remain in memory, storage, or backups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Words From the Underground</h2>
+            
+            <div class="quote-slider">
+                <div class="quote active">
+                    "In a time of universal surveillance, telling the truth is a revolutionary act."
+                    <span class="quote-author">— Anonymous</span>
+                </div>
+                
+                <div class="quote">
+                    "No one owns you. No one sees you. Except who you choose."
+                    <span class="quote-author">— Encly User</span>
+                </div>
+                
+                <div class="quote">
+                    "We don't ban. We don't log. We don't ask who you are."
+                    <span class="quote-author">— Encly Manifesto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donations Section -->
+    <section class="section donations" id="donate">
+        <div class="container">
+            <div class="donation-card">
+                <div class="donation-content">
+                    <h3>Support Digital Freedom</h3>
+                    <p>Encly is funded entirely by cryptocurrency donations from users like you. No investors. No ads. No compromises.</p>
+                    
+                    <div class="crypto-options">
+                        <div class="crypto-option">
+                            <div class="crypto-icon">
+                                <i data-lucide="bitcoin"></i>
+                            </div>
+                            <span>Bitcoin</span>
+                        </div>
+                        
+                        <div class="crypto-option">
+                            <div class="crypto-icon">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <span>Ethereum</span>
+                        </div>
+                        
+                        <div class="crypto-option">
+                            <div class="crypto-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <span>Monero</span>
+                        </div>
+                    </div>
+                    
+                    <div class="wallet-address">
+                        BTC: bc1qxy2kgdygjrsqtzq2n0yrf249nw6k2g5k9e9m7u
+                    </div>
+                    
+                    <div class="wallet-address">
+                        ETH: 0x71C7656EC7ab88b098defB751B7401B5f6d8976F
+                    </div>
+                    
+                    <div class="wallet-address">
+                        XMR: 48j9F9fQZ3m3WQZJ7KxKZ1Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7Z7
+                    </div>
+                    
+                    <p class="disclaimer">Donations keep us alive. We store nothing. We monetize nothing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer"></footer>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load header
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                    lucide.createIcons();
+                })
+                .catch(error => console.error('Error loading header:', error));
+            
+            // Load footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                    lucide.createIcons();
+                })
+                .catch(error => console.error('Error loading footer:', error));
+
+            // Accordion functionality
+            document.querySelectorAll('.accordion-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement;
+                    const content = header.nextElementSibling;
+                    const icon = header.querySelector('.accordion-icon');
+
+                    // Toggle active class on accordion item
+                    const isActive = item.classList.contains('active');
+                    item.classList.toggle('active', !isActive);
+
+                    // Toggle content visibility
+                    content.style.display = isActive ? 'none' : 'block';
+
+                    // Rotate chevron icon
+                    icon.style.transform = isActive ? 'rotate(0deg)' : 'rotate(180deg)';
+                });
+            });
+
+            // Copy wallet address to clipboard
+            document.querySelectorAll('.wallet-address').forEach(address => {
+                address.addEventListener('click', () => {
+                    // Extract only the address, removing the prefix (e.g., "BTC: ", "ETH: ", "XMR: ")
+                    const fullText = address.textContent.trim();
+                    const textToCopy = fullText.replace(/^(BTC|ETH|XMR):\s*/, '');
+
+                    // Try modern Clipboard API
+                    if (navigator.clipboard && navigator.clipboard.write) {
+                        navigator.clipboard.write(textToCopy)
+                            .then(() => {
+                                alert(`${textToCopy} copied to clipboard!`);
+                            })
+                            .catch(err => {
+                                console.error('Clipboard API failed:', err);
+                                // Fallback to execCommand
+                                tryFallbackCopy(textToCopy);
+                            });
+                    } else {
+                        // Fallback if Clipboard API is unavailable
+                        tryFallbackCopy(textToCopy);
+                    }
+                });
+            });
+
+            // Fallback copy method using execCommand
+            function tryFallbackCopy(text) {
+                try {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = text;
+                    textarea.style.position = 'fixed'; // Prevent scrolling
+                    textarea.style.opacity = '0'; // Hide element
+                    document.body.appendChild(textarea);
+                    textarea.focus();
+                    textarea.select();
+                    const success = document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    if (success) {
+                        alert(`${text} copied to clipboard!`);
+                    } else {
+                        alert('Failed to copy address. Please copy manually.');
+                        console.error('execCommand copy failed');
+                    }
+                } catch (err) {
+                    alert('Failed to copy address. Please copy manually.');
+                    console.error('Fallback copy failed:', err);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

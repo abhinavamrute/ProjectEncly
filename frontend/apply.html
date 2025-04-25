@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Rebellion - Encly</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <header id="header"></header>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Rebellion Section -->
+    <section class="section rebellion" id="rebel">
+        <div class="container">
+            <h2 class="section-title">Join the <span class="glitch" data-text="Rebellion">Rebellion</span></h2>
+            
+            <div class="rebel-card">
+                <div class="rebel-content">
+                    <h3>We Need the 1% Who <span class="strike">Code</span> Rebel</h3>
+                    
+                    <div class="rebel-grid">
+                        <div class="rebel-item">
+                            <div class="rebel-icon">
+                                <i data-lucide="skull"></i>
+                            </div>
+                            <h4>No Salary. No Masters.</h4>
+                            <p>We don't pay in fiat lies. Earn crypto or work for the cause.</p>
+                        </div>
+                        
+                        <div class="rebel-item">
+                            <div class="rebel-icon">
+                                <i data-lucide="bomb"></i>
+                            </div>
+                            <h4>Burn It All Down</h4>
+                            <p>Your mission: architect systems that dismantle surveillance capitalism.</p>
+                        </div>
+                        
+                        <div class="rebel-item">
+                            <div class="rebel-icon">
+                                <i data-lucide="eye-off"></i>
+                            </div>
+                            <h4>Total Anonymity</h4>
+                            <p>We'll never know your real identity. PGP keys only.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rebel-cta">
+                        <p class="disclaimer">This isn't a job. It's a digital insurrection.</p>
+                        <button class="btn btn-rebel" id="rebelBtn">
+                            <i data-lucide="fingerprint"></i> Apply to Rebel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Placeholder -->
+    <footer id="footer"></footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+                lucide.createIcons();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                lucide.createIcons();
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+        // Rebel application modal
+        const rebelBtn = document.getElementById('rebelBtn');
+        rebelBtn.addEventListener('click', () => {
+            const pgpKey = `-----BEGIN PGP PUBLIC KEY BLOCK-----
+            [Encly Rebellion PGP Key Here]
+            -----END PGP PUBLIC KEY BLOCK-----`;
+            
+            const message = `🚨 APPLICATION INSTRUCTIONS 🚨
+            
+        1. Encrypt all communications with our PGP key:
+        ${pgpKey}
+
+        2. Answer these questions:
+        - What systems would you burn down first?
+        - How would you anonymize the internet?
+        - Prove you're not a fed
+
+        3. Send to: rebellion@encly.org
+
+        No LinkedIn. No resumes. Just raw skill and hatred for the machine.`;
+
+            prompt("Rebel Application Protocol", message);
+        });
+    </script>
+</body>
+</html>

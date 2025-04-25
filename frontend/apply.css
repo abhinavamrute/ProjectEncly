@@ -1,0 +1,204 @@
+/* Rebellion section specific styles */
+.rebellion {
+    background: linear-gradient(135deg, #050505 0%, #12001a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.rebellion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.rebel-card {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid var(--accent);
+    box-shadow: 0 0 20px rgba(255, 0, 102, 0.2);
+    border-radius: 8px;
+    padding: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.rebel-card::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 0, 102, 0.1) 0%,
+        rgba(0, 255, 228, 0.1) 100%
+    );
+    transform: rotate(30deg);
+    z-index: -1;
+}
+
+.rebel-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--accent);
+}
+
+.rebel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.rebel-item {
+    background: rgba(20, 20, 20, 0.7);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent);
+    transition: all 0.3s ease;
+}
+
+.rebel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 102, 0.3);
+}
+
+.rebel-icon {
+    color: var(--accent);
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rebel-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.rebel-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.rebel-cta {
+    text-align: center;
+}
+
+.btn-rebel {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: pulse-accent 2s infinite;
+}
+
+.btn-rebel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 102, 0.4);
+}
+
+@keyframes pulse-accent {
+    0% { box-shadow: 0 0 0 0 rgba(255, 0, 102, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 0, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 102, 0); }
+}
+
+.strike {
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+}
+
+.glitch {
+    position: relative;
+    color: var(--accent);
+}
+
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 2px 0 #00ffe4;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(30px, 9999px, 10px, 0); }
+    20% { clip: rect(15px, 9999px, 100px, 0); }
+    40% { clip: rect(50px, 9999px, 105px, 0); }
+    60% { clip: rect(2px, 9999px, 80px, 0); }
+    80% { clip: rect(70px, 9999px, 50px, 0); }
+    100% { clip: rect(30px, 9999px, 110px, 0); }
+}
+
+/* Ensure the page has proper spacing */
+body {
+    padding-top: 80px; /* To account for the fixed navbar */
+}
+
+#rebel.section {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+/* Update the scroll progress bar color */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+/* Update the apply button hover effect */
+.apply-link:hover {
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(255, 0, 102, 0.5);
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.4);
+}
+
+/* If you want the apply link to have a more prominent effect: */
+.apply-link {
+    position: relative;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.apply-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    transition: width 0.3s ease;
+}
+
+.apply-link:hover::after {
+    width: 100%;
+}
+
