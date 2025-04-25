@@ -21,6 +21,7 @@
 
 ## Project Structure
 
+encly/ ├── frontend/ # HTML/CSS/JS - Custom modern-vintage UI ├── backend/ # Server logic, encryption, and routing ├── assets/ # Icons, fonts, images, branding ├── docs/ # Planning, architecture, manifesto ├── .env.example # Environment variable template ├── LICENSE └── README.md
 
 ---
 
