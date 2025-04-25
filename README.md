@@ -22,7 +22,7 @@
 ## Project Structure
 
 <pre>encly/
-├── frontend/        # HTML/CSS/JS - Custom modern-vintage UI
+├── frontend/        # HTML/CSS/JS - Custom UI
 ├── backend/         # Server logic, encryption, and routing
 ├── assets/          # Icons, fonts, images, branding
 ├── docs/            # Planning, architecture, manifesto
